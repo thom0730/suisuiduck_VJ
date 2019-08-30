@@ -11,6 +11,7 @@
 #include "Box.hpp"
 #include "WebCam.hpp"
 #include "kinect.hpp"
+#include "PointCloud.hpp"
 
 #define HOST "127.0.0.1"
 #define PORT 7401
@@ -58,6 +59,7 @@ class ofApp : public ofBaseApp{
     Box boxclass;
     WebCam webcam;
     kinect kinect;
+    PointCloud pointcloud;
     
 		
 };
