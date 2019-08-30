@@ -55,10 +55,11 @@ void ofApp::draw(){
     if(sceneFLG==5 || sceneFLG==6){
         kinect.draw(sceneFLG , getFFT);
     }
-    if(sceneFLG==6){
-        //rollCam.begin();
-        //pointcloud.draw(getFFT);
-        //rollCam.end();
+    if(sceneFLG==7){
+        wave.draw(getFFT);
+    }
+    if(sceneFLG==8){
+        model.draw(getFFT);
     }
     if(sceneFLG==9)duck.draw(getFFT);
     buffer.end();
@@ -242,7 +243,9 @@ void ofApp::AllSetUp(){
     boxclass.setup();
     webcam.setup();
     kinect.setup();
-    //pointcloud.setup();
+    wave.setup();
+    model.setup();
+
     
 }
 void ofApp::AllUpdate(){
@@ -250,7 +253,9 @@ void ofApp::AllUpdate(){
     duck.update();
     boxclass.update();
     kinect.update();
-    //pointcloud.update();
+    wave.update();
+    model.update();
+
    
 
 }

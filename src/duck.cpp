@@ -9,8 +9,8 @@
 //--------------------------------------------------------------
 void duck::setup(){
     
-    model.loadModel("suisui.stl");
-    model.setPosition(ofGetWidth()/2, ofGetHeight()/2, -500);
+    model.loadModel("CIT.obj");
+    model.setPosition(ofGetWidth()/2, ofGetHeight()/2, 0);
     //we need to call this for textures to work on models
     ofDisableArbTex();
     //this makes sure that the back of the model doesn't show through the front
