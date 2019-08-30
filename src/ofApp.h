@@ -10,6 +10,7 @@
 #include "duck.hpp"
 #include "Box.hpp"
 #include "WebCam.hpp"
+#include "kinect.hpp"
 
 #define HOST "127.0.0.1"
 #define PORT 7401
@@ -56,6 +57,7 @@ class ofApp : public ofBaseApp{
     duck duck;
     Box boxclass;
     WebCam webcam;
+    kinect kinect;
     
 		
 };

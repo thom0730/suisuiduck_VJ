@@ -30,7 +30,6 @@ void ofApp::update(){
 void ofApp::draw(){
     ofBackground(0);
     
-    //Glitch かける系
     if(sceneFLG==1){}
     
     buffer.begin();
@@ -52,6 +51,9 @@ void ofApp::draw(){
         rollCam.begin();
         webcam.draw(getFFT*20);
         rollCam.end();
+    }
+    if(sceneFLG==5){
+        kinect.draw(getFFT);
     }
     if(sceneFLG==9)duck.draw(getFFT);
     buffer.end();
@@ -234,10 +236,12 @@ void ofApp::AllSetUp(){
     duck.setup();
     boxclass.setup();
     webcam.setup();
+    kinect.setup();
 }
 void ofApp::AllUpdate(){
     particle.update(getFFT*100);
     duck.update();
     boxclass.update();
-   // webcam.update();
+    kinect.update();
+
 }

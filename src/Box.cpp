@@ -39,16 +39,5 @@ void Box::draw(float _getFFT){
     }
     mesh.drawWireframe();  //メッシュのフレームを描画
    // mesh.draw();  //メッシュのフレームを描画
-//    ofPushStyle();
-//    ofSetColor(31, 127, 255);
-//    ofEnableLighting();
-//    ofEnableDepthTest();
-//    box.setPosition(ofGetWidth()/2, ofGetHeight()/2, 0);
-//    box.rotate(0.9, 0.5, 1.0, 0.2);
-//    //box.setScale(_getFFT);
-//    box.draw();
-//    ofDisableDepthTest();
-//    ofDisableLighting();
-//    ofPopStyle();
 
 }

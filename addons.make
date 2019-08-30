@@ -1,7 +1,10 @@
 ofxAssimpModelLoader
+ofxControlPanel
 ofxCv
 ofxGui
+ofxKinect
 ofxOpenCv
 ofxOsc
 ofxPostGlitch
 ofxRollingCam
+ofxXmlSettings
